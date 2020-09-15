@@ -40,24 +40,45 @@ namespace Task1
 
         public virtual bool CheckRange(string Chartarget)
         {
-            bool range = false;
-            DistanceTo(Chartarget);
+            bool valid = false;
+            int range = DistanceTo(Chartarget);
 
+            if (range == 1)
+            {
+                valid = true;
+            }
 
-            return range;
+            return valid;
         }
 
         private int DistanceTo( string target)
         {
             int distance = 0;
 
+            //calculations==========
 
             return distance;
         }
 
         public void Move(Movement move)
         {
-
+            switch (move)
+            {
+                case Movement.Nothing:
+                    break;
+                case Movement.left:
+                    this.x -= 1;
+                    break;
+                case Movement.right:
+                    this.x += 1;
+                    break;
+                case Movement.up:
+                    this.y -= 1;
+                    break;
+                case Movement.down:
+                    this.y += 1;
+                    break;
+            }
         }
 
         public virtual Movement ReturnMove(Movement move = 0)

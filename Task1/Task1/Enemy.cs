@@ -24,7 +24,7 @@ namespace Task1
         public override string ToString()
         {
             //EnemyClassName at[X, Y] (Amount DMG)-------------- message that must be displayed 
-            string output = "at["+this.x+","+this.y+"] "+this.Damage;
+            string output = "G at["+this.x+","+this.y+"] "+this.Damage;
             return output;
         }
 

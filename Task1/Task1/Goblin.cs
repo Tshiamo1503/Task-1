@@ -13,12 +13,13 @@ namespace Task1
         {
             this.y = y;
             this.x = x;
+            this.MAxHP = 10;
         }
 
         public override Movement ReturnMove(Movement direction)
         {
             Random r = new Random();
-
+           // direction =r.Next(0, 5);=====================
             return direction;
         }
 
