@@ -8,8 +8,8 @@ namespace Task1
 {
     class Map
     {
-        private char[,] tile;
-        //Hero hero = new Hero();
+        private char[,] Maptiles;
+        Hero hero = new Hero();
         private Enemy[] enemies;
         private int width, height;
         private Random randomize = new Random();
@@ -18,7 +18,7 @@ namespace Task1
         {
             this.width = randomize.Next(minWidth, maxWidth + 1);
             this.height = randomize.Next(minHeight, maxHeight + 1);
-            this.tile = new char[height,width];
+            this.Maptiles = new char[height,width];
             this.enemies = new Enemy[numEnemies];
             Create();//hero
 
