@@ -11,7 +11,7 @@ namespace Task1
         protected int HP;
         protected int MAxHP;
         protected int Damage;
-        protected char[,] Tile;
+        protected char[,] Vision;
 
         public enum Movement { Nothing = 0, left = 1, right = 2, up = 3, down = 4 }
 
@@ -20,12 +20,11 @@ namespace Task1
         {
             this.x = x;
             this.y = y;
-            this.Tile[y, x] = symbol;
         }
 
-        public virtual void Attack(string target)
+        public virtual void Attack(char target)
         {
-
+            HP -= this.HP;
         }
 
         public bool IsDead()
