@@ -35,8 +35,8 @@
             this.lblMap = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lstbxEnemies = new System.Windows.Forms.ListBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,7 +100,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.lstbxEnemies);
+            this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(31, 233);
             this.groupBox1.Name = "groupBox1";
@@ -109,22 +109,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Attack log";
             // 
-            // lstbxEnemies
-            // 
-            this.lstbxEnemies.FormattingEnabled = true;
-            this.lstbxEnemies.ItemHeight = 16;
-            this.lstbxEnemies.Location = new System.Drawing.Point(6, 33);
-            this.lstbxEnemies.Name = "lstbxEnemies";
-            this.lstbxEnemies.Size = new System.Drawing.Size(194, 132);
-            this.lstbxEnemies.TabIndex = 6;
-            // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(253, 342);
+            this.richTextBox1.Location = new System.Drawing.Point(253, 336);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(336, 96);
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = "";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(7, 22);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(123, 148);
+            this.listBox1.TabIndex = 6;
             // 
             // Form1
             // 
@@ -156,8 +156,8 @@
         private System.Windows.Forms.Label lblMap;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListBox lstbxEnemies;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
